@@ -14,6 +14,14 @@ public class RegisterPage extends BaseClass{
 	@FindBy(name="lastname")
 	private WebElement lname;
 	
+	@FindBy(name="reg_email__")
+	private WebElement emailID ;
+	
+	@FindBy(name="reg_passwd__")
+	private WebElement passW ;
+	
+	
+	
 	public RegisterPage()
 	{
 		PageFactory.initElements(driver, this);
@@ -34,7 +42,11 @@ public class RegisterPage extends BaseClass{
 		
 	}
 	
-	
+	public void EmailPass(String emailIDD, String PasssW)
+	{
+		emailID.sendKeys(emailIDD);
+		passW.sendKeys(PasssW);
+	}
 	
 	
 	

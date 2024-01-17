@@ -5,3 +5,6 @@ Feature: Test FB Application
 
   Scenario: Test Facebook Regitration Application
     And user enters a valid firstname and lastname
+
+  Scenario: Test Facebook Regitration Application
+    And user enters a valid emailId and Password
