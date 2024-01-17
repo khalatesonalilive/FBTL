@@ -24,4 +24,9 @@ public static RegisterPage registerPage;
 	public void user_enters_a_valid_firstname_and_lastname() {
 		registerPage.FirstAndLastNameFunctionality("Anuja", "Bhosale");
 	}
+	
+	@Given("user enters a valid emailId and Password")
+	public void user_enters_a_valid_email_id_and_password() {
+		registerPage.EmailPass("bhosaleanuja@gmail.com", "anujabhosale123");
+	}
 }
