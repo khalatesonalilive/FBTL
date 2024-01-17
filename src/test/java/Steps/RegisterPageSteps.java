@@ -19,4 +19,9 @@ public static RegisterPage registerPage;
 	Assert.assertEquals(a, true);
 	
 	}
+	
+	@Given("user enters a valid firstname and lastname")
+	public void user_enters_a_valid_firstname_and_lastname() {
+		registerPage.FirstAndLastNameFunctionality("Anuja", "Bhosale");
+	}
 }
